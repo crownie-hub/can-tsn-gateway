@@ -1,0 +1,10 @@
+# CAN-TSN Gateway Requirements
+# Python 3.8+
+
+# No external dependencies required
+# Uses only Python standard library
+
+# Optional for development:
+# pytest>=7.0.0  # For unit testing
+# black>=22.0.0  # For code formatting
+# mypy>=0.950    # For type checking

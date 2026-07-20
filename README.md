@@ -1,6 +1,6 @@
 ## CAN–TSN Gateway
 
-Implementation of CAN–TSN gateway software for real-time communication between Controller Area Network (CAN) and Time-Sensitive Networking (TSN) networks.
+Implementation of CAN-TSN gateway software for real-time communication between Controller Area Network (CAN) and Time-Sensitive Networking (TSN) networks.
 
 ## Overview
 
@@ -13,7 +13,7 @@ This repository implements CAN–TSN gateway mechanisms, including:
 - Zero-Slack forwarding
 - Zero-Slack with Arrival Prediction forwarding
 
-The implementation serves as a research platform for evaluating gateway forwarding strategies and timing behavior in hybrid CAN–TSN networks.
+The implementation serves as a research platform for evaluating gateway forwarding strategies and timing behavior in hybrid CAN-TSN networks.
 
 ## Author
 

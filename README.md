@@ -4,7 +4,7 @@ Implementation of CAN-TSN gateway software for real-time communication between C
 
 ## Overview
 
-This repository implements CAN–TSN gateway mechanisms, including:
+This repository implements CAN-TSN gateway mechanisms, including:
 
 - CAN message encapsulation into TSN frames
 - TSN frame decapsulation into CAN messages

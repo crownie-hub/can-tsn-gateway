@@ -1,6 +1,5 @@
 # src/gateways/decap_sim.py
-# Decapsulation simulation — converts gateway batches into destination
-# CAN events for the destination scheduler.
+# Decapsulation simulation - converts gateway batches into destination CAN events for the destination scheduler.
 # All times in milliseconds (ms).
 
 from dataclasses import dataclass
@@ -28,27 +27,13 @@ def fifo_decap_releases(batches, msgset, tsn_delay_ms):
     """
     Convert gateway batches into destination CAN release events.
 
-    All burst messages become ready simultaneously at tsn_arrive.
     Scheduler (FIFO/FP/MAT) decides ordering.
-    CAN tx serializes via tx_end progression.
-
-    Parameters
-    ----------
-    batches      : list[BatchResult]
-    msgset       : list[CANMessage]
-    tsn_delay_ms : float — TSN propagation delay (wcrt_ms)
-
-    Returns
-    -------
-    list[DecapRelease] sorted by decap_release_time
     """
     releases = []
 
     for batch in batches:
         tsn_arrive = float(batch.fwd_time) + float(tsn_delay_ms)
 
-        # All burst messages become ready simultaneously at tsn_arrive.
-        # Scheduler (FIFO/FP/MAT) decides ordering.
         # CAN tx loop serializes via tx_end.
         for pos, inst in enumerate(batch.instances):
             fid = int(inst.flow_id)

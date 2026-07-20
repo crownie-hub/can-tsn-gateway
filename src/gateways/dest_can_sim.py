@@ -11,7 +11,7 @@
 #    Low-Congestion TSN-to-CAN Scheduler"
 #   IEEE TCAD 2023.
 #
-# Paper-faithful MAT implementation:
+#  MAT implementation:
 #
 #   MAT(m_i)
 #       =

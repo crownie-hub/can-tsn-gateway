@@ -1,26 +1,22 @@
-# CAN-TSN Gateway Implementation
+# CAN–TSN Gateway
 
-Implementation of FIFO and Fixed-Priority batch forwarding for CAN-TSN gateways.
+Implementation of CAN–TSN gateway software for deterministic communication between Controller Area Network (CAN) and Time-Sensitive Networking (TSN) Ethernet.
+
+## Overview
+
+This repository implements CAN–TSN gateway mechanisms, including:
+
+- CAN message encapsulation into TSN frames
+- TSN frame decapsulation into CAN messages
+- Buffer-Full forwarding
+- Timeout-based forwarding
+- Zero-Slack forwarding
+- Zero-Slack with Arrival Prediction forwarding
+
+The implementation provides a research platform for evaluating gateway forwarding strategies and timing behavior in hybrid CAN–TSN networks.
 
 ## Author
-Essl - Omolade Ikumapayi
-## Project Structure
 
-```
-can_tsn_gateway/
-├── src/                    # Core implementation
-│   ├── can_message.py      # CAN message and periodic source
-│   ├── tsn_frame.py        # TSN frame encapsulation
-│   ├── utils.py            # Utility functions
-│   └── gateways/
-│       ├── fifo_gateway.py           # FIFO batch forwarding
-│       └── fixed_priority_gateway.py # Fixed-Priority batch forwarding
-├── examples/               # Usage examples
-├── tests/                  # Unit tests
-├── docs/                   # Documentation
-└── README.md              # This file
-```
-
-## Quick Start
-
-
+Omolade Ikumapayi  
+Embedded Systems Security Lab (ESSL)  
+University of Colorado Colorado Springs

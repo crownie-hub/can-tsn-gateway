@@ -1,4 +1,4 @@
-# CAN–TSN Gateway
+## CAN–TSN Gateway
 
 Implementation of CAN–TSN gateway software for real-time communication between Controller Area Network (CAN) and Time-Sensitive Networking (TSN) networks.
 
